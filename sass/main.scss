@@ -1,5 +1,4 @@
-$color: blue;
 
-body {
-    background-color: $color;
-}
+@import "./test/_@extend";
+@import "./test/@mixin";
+@import "./test/$name+&"

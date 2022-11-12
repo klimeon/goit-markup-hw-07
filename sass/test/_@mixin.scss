@@ -1,0 +1,40 @@
+@mixin basicMargin($top: 0, $bottom: 0, $left: 0, $right: 0) {
+    margin-top: $top px;
+    margin-bottom: $bottom px;
+    margin-left: $left px;
+    margin-right: $right px;
+}
+.container {
+    @include basicMargin(3, 3)
+}
+
+
+// Змінні
+/* 1.1 */
+$icons: "instagram", "twitter", "facebook", "linkedin";
+
+@mixin iconList($icons) {
+    @each $Name in $icons {
+        .icon-#{$Name} {
+            background-image: url(../images/#{$Name}.svg);
+        }
+    }
+}
+@include iconList($icons);
+
+/* 1.2 */
+$iconNew: "hi", "congratulation", 'BAST';
+
+@include iconList($iconNew);
+
+
+/* 2.1 */
+@mixin centerFlex($type: flex, $position: center) {
+    display: #{$type};
+    justify-content: $position;
+    align-items: center;
+}
+
+.box {
+    @include centerFlex(fex, space-between)
+}

@@ -1,0 +1,22 @@
+$color: blue;
+.box {
+    background-color: $color;
+}
+
+// $C: Sname_______________________ ;
+
+/* 1.1 */
+$nomber: 20px;
+.box {
+    margin: calc(#{$nomber}+2);
+}
+
+/* 2.1 */
+.box {
+    &-title {
+        margin-top: 2px;
+    }
+    .text:hover &:hover {
+        margin-bottom: 60px;
+    }
+}
