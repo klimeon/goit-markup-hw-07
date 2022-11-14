@@ -1,4 +1,9 @@
 
-@import "./test/_@extend";
-@import "./test/@mixin";
-@import "./test/$name+&"
+// @import "./test/_@extend";
+// @import "./test/@mixin";
+// @import "test/$name+&" ;
+// @import "test/@each" ;
+// @import "test/map" ;
+@import "base/colors";
+
+@import "utils/hiden";

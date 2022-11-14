@@ -1,3 +1,4 @@
+/* $name+&____________________*/
 $color: blue;
 .box {
     background-color: $color;
@@ -16,7 +17,16 @@ $nomber: 20px;
     &-title {
         margin-top: 2px;
     }
-    .text:hover &:hover {
+    .text:hover &:hover  {
         margin-bottom: 60px;
     }
+}
+
+/* zminna */
+$text: title ;
+.box-#{$text} {
+    border: 2px;
+}
+.#{$text}-box {
+    color: red;
 }

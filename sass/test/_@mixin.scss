@@ -1,3 +1,4 @@
+/*@mixin_________________*/
 @mixin basicMargin($top: 0, $bottom: 0, $left: 0, $right: 0) {
     margin-top: $top px;
     margin-bottom: $bottom px;
@@ -9,7 +10,7 @@
 }
 
 
-// Змінні
+/* Змінні____________*/
 /* 1.1 */
 $icons: "instagram", "twitter", "facebook", "linkedin";
 
@@ -29,12 +30,13 @@ $iconNew: "hi", "congratulation", 'BAST';
 
 
 /* 2.1 */
+
 @mixin centerFlex($type: flex, $position: center) {
-    display: #{$type};
+    display: #{$type}; 
     justify-content: $position;
     align-items: center;
 }
 
 .box {
-    @include centerFlex(fex, space-between)
+    @include centerFlex(inline-flex)
 }

@@ -1,0 +1,26 @@
+/*map_________________*/
+$colors: (
+    'primary': #fff,
+    'secondary': #000,
+    'accent': #DDD,
+    "main": red
+);
+@function getColor($key) {
+    @return map-get($colors, $key);
+}
+
+.box {
+    color: getColor(accent);
+}
+
+.section {
+    color: map-get($colors, secondary);
+}
+
+.button {
+    color: getColor(main);
+}
+
+.title {
+    color: map-get($colors, primary );
+}

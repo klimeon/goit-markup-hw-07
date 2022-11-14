@@ -1,3 +1,20 @@
-.box {
+/*@extend________________*/
+
+.box3 {
     padding-left: 3px;
 }
+.section {
+    @extend .box ;
+    margin-bottom: 40px;
+}
+
+/* placeholder */
+%button {
+    margin-left: 2px;
+    margin-top: 45px;
+}
+.box2 {
+    @extend %button
+
+}
+
